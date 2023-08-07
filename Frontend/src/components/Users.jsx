@@ -21,9 +21,9 @@ function Users() {
   };
 
   return (
-    <div className='d-flex vh-100 bg-primary justify-content-center align-items-center'>
+    <div className='d-flex vh-100 bg-secondary justify-content-center align-items-center'>
       <div className='w-50 bg-white rounded p-3'>
-        <h2 className='d-flex justify-content-center align-items-center text-primary'>CURD App</h2>
+        <h2 className='d-flex justify-content-center align-items-center text-secondry'>CURD APP</h2>
         <div className="d-flex justify-content-end">
           <Link to="/create" className='btn btn-success'>Add</Link>
         </div>
@@ -46,7 +46,7 @@ function Users() {
                   <td>{user.email}</td>
                   <td>{user.phone}</td>
                   <td>
-                    <Link to={`/update/${user._id}`} className='btn btn-success'>Update</Link>
+                    <Link to={`/update/${user._id}`} className='btn btn-success'>Update</Link> <span></span>
                     <button className='btn btn-danger' onClick={() => handleDelete(user._id)}>Delete</button>
                   </td>
                 </tr>
